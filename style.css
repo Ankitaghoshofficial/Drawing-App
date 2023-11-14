@@ -21,7 +21,7 @@ body{
   max-width: 1050px;
 }
 section{
-  background: #fff;
+  background: rgb(248, 252, 199);
   border-radius: 7px;
 }
 .tools-board{
@@ -45,24 +45,24 @@ section{
   filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
 }
 .option :where(span, label){
-  color: #5A6168;
+  color: #150363;
   cursor: pointer;
   padding-left: 10px;
 }
 .option:is(:hover, .active) :where(span, label){
-  color: #4A98F7;
+  color: #fa9805;
 }
 .option #fill-color{
   cursor: pointer;
-  height: 14px;
-  width: 14px;
+  height: 30px;
+  width: 30px;
 }
 #fill-color:checked ~ label{
-  color: #4A98F7;
+  color: #031c3b;
 }
 .option #size-slider{
   width: 100%;
-  height: 5px;
+  height: 20px;
   margin-top: 10px;
 }
 .colors .options{
@@ -77,8 +77,8 @@ section{
   position: relative;
 }
 .colors .option:nth-child(1){
-  background-color: #fff;
-  border: 1px solid #bfbfbf;
+  background-color: white;
+  border: 1px solid #0c0b0b;
 }
 .colors .option:nth-child(2){
   background-color: #000;
@@ -90,9 +90,9 @@ section{
   background-color: #6DD400;
 }
 .colors .option:nth-child(5){
-  background-color: #4A98F7;
+  background-color: #29077a;
 }
-  }
+  
 .colors .option.selected::before{
   position: absolute;
   content: "";
@@ -106,7 +106,7 @@ section{
   transform: translate(-50%, -50%);
 }
 .colors .option:first-child.selected::before{
-  border-color: #ccc;
+  border-color:  #000000;
 }
 .option #color-picker{
   opacity: 0;
@@ -125,17 +125,17 @@ section{
   cursor: pointer;
 }
 .buttons .clear-canvas{
-  color: #6C757D;
-  border: 1px solid #6C757D;
+  color: #ee3817;
+  border: 2px solid #000000;
   transition: all 0.3s ease;
 }
 .clear-canvas:hover{
-  color: #fff;
-  background: #6C757D;
+  color: #f50e0e;
+  background: #f9fbfd;
 }
 .buttons .save-img{
-  background: #4A98F7;
-  border: 1px solid #4A98F7;
+  background: #ee3817;
+  border: 2px solid  #000000;
 }
 .drawing-board{
   flex: 1;
@@ -144,4 +144,5 @@ section{
 .drawing-board canvas{
   width: 100%;
   height: 100%;
+ 
 }
